@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  node:
+    image: node:14.16.0
+    working_dir: /code
+    command: npm run dev
+    volumes:
+      - ./:/code
+    ports:
+      - 8080:8080
